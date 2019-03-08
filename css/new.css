@@ -23,6 +23,8 @@ body {
     letter-spacing: 2px;
     margin: 30px 0 30px 20px;
     font-family: "Roboto", sans-serif; }
+    .header__brand-heading span {
+      color: #2980b9; }
   .header__nav-toggle {
     width: 30px;
     height: 30px;
@@ -88,11 +90,11 @@ body {
       width: 30px;
       height: 2px;
       margin-left: 10px;
-      background: #333; }
+      background: #2980b9; }
   .hero__headline {
     margin: 0;
     width: 80%;
-    letter-spacing: 3px; }
+    letter-spacing: 2px; }
 
 .about {
   background: #333;
@@ -120,13 +122,13 @@ body {
       width: 30px;
       height: 2px;
       margin-left: 10px;
-      background: #fff; }
+      background: #2980b9; }
   .about__text {
     margin: 0;
     font-size: 1.4rem; }
   .about__image {
     flex: 0 1 50%;
-    background-image: url("/img/Side.jpeg");
+    background-image: url(/img/Side.jpeg);
     min-height: 400px;
     background-size: cover;
     background-position: top center;
@@ -144,7 +146,7 @@ body {
     .portfolio__headline::after {
       content: "";
       height: 2px;
-      background: #333;
+      background: #2980b9;
       display: block;
       margin-top: 5px; }
   .portfolio__item-wrapper {
@@ -154,7 +156,8 @@ body {
     grid-column-gap: 2px; }
   .portfolio__item {
     grid-column: auto / span 8;
-    position: relative; }
+    position: relative;
+    min-height: 300px; }
     .portfolio__item::before {
       opacity: 1;
       z-index: 1;
@@ -170,7 +173,7 @@ body {
       justify-content: center;
       align-items: center;
       transition: all 0.3s;
-      background: url("/img/portrait_small.jpg") center center no-repeat; }
+      background: url(/img/portrait_small.jpg) center center no-repeat; }
     .portfolio__item::after {
       background: #000;
       opacity: 0.9;
@@ -223,3 +226,39 @@ body {
     opacity: 1; }
   .portfolio__contact-item:hover::after {
     opacity: 0.65; }
+
+.contact {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .contact__headline {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-align: center; }
+    .contact__headline::after {
+      content: "";
+      height: 2px;
+      background: #2980b9;
+      display: block;
+      margin-top: 5px; }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contact input {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    width: 400px;
+    border: none;
+    padding: 10px;
+    margin: 5px 0; }
+  .contact textarea {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    resize: none;
+    width: 400px;
+    border: none;
+    padding: 10px;
+    margin: 5px 0; }

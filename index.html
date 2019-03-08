@@ -15,7 +15,7 @@
         <span></span>
       </div> -->
       <div class="header__brand">
-        <h2 class="header__brand-heading">PS</h2>
+        <h2 class="header__brand-heading">P<span>S</span></h2>
       </div>
       <nav class="header__nav nav">
         <ul class="nav__list">
@@ -28,7 +28,6 @@
         </ul>
       </nav>
     </header>
-
     <main>
       <div class="hero">
         <h2 class="hero__sub-headline">Phillip Sun</h2>
@@ -36,7 +35,6 @@
           A Freelance Developer Specializing In Web Development
         </h1>
       </div>
-
       <div class="about">
         <div class="about__intro">
           <h2 class="about__headline">Hello!</h2>
@@ -48,7 +46,6 @@
         </div>
         <div class="about__image"></div>
       </div>
-
       <div class="portfolio" id="portfolio">
         <h2 class="portfolio__headline">My Work</h2>
         <div class="portfolio__item-wrapper">
@@ -94,29 +91,22 @@
               alt="Justin Martin, M.D. Website Image"
             />
           </div>
-
           <div class="portfolio__item">
             <img
               src="/img/portfolio_7.jpg"
               class="portfolio__item-image"
-              alt="DentalWorks Portal Website Image"
+              alt="Contemporary Esthetic & Dentistry Website Image"
             />
           </div>
           <div class="portfolio__item">
             <img
               src="/img/portfolio_8.jpg"
               class="portfolio__item-image"
-              alt="Vance Thompson Vision Website Image"
+              alt="Setty Plastic Surgery Website Image"
             />
           </div>
           <div class="portfolio__item portfolio__contact-item"></div>
         </div>
-      </div>
-
-      <div class="services">
-        <div class="box">Legal Practice and Attorney Websites</div>
-        <div class="box">Front End Development</div>
-        <div class="box">Web Application Development</div>
       </div>
 
       <div class="contact">
@@ -124,41 +114,30 @@
           Let's build something awesome together.
         </h2>
         <form class="contact__form" action="" data-netlify="true">
-          <div class="form-group">
-            <label class="contact__label contact__label--name" for="name"
-              >Name</label
-            >
-            <input
-              class="contact__input contact__input--name form-control"
-              type="name"
-              id="name"
-              placeholder="Enter name"
-            />
-          </div>
-
-          <div class="form-group">
-            <label class="contact__label contact__label--phone" for="name"
-              >Phone</label
-            >
-            <input
-              class="contact__input contact__input--phone form-control"
-              type="phone"
-              id="phone"
-              placeholder="Enter phone"
-            />
-          </div>
-
-          <div class="form-group">
-            <label class="contact__label contact__label--email" for="email"
-              >Email address</label
-            >
-            <input
-              class="contact__input contact__input--email form-control"
-              type="email"
-              id="email"
-              placeholder="Enter email"
-            />
-          </div>
+          <input
+            class="contact__input contact__input--name form-control"
+            type="name"
+            id="name"
+            placeholder="Your Name"
+          />
+          <input
+            class="contact__input contact__input--phone form-control"
+            type="phone"
+            id="phone"
+            placeholder="Your Phone Number"
+          />
+          <input
+            class="contact__input contact__input--email form-control"
+            type="email"
+            id="email"
+            placeholder="Your Email"
+          />
+          <textarea
+            class="contact__input contact__input--comments form-control"
+            placeholder="Leave a comment"
+            rows="5"
+          >
+          </textarea>
         </form>
       </div>
     </main>
@@ -178,8 +157,8 @@
           distance: "500px"
         });
         ScrollReveal().reveal(".portfolio__item", {
-          interval: 32,
-          reset: true
+          interval: 32
+          //reset: true
         });
       })();
     </script>
